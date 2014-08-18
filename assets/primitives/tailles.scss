@@ -23,15 +23,19 @@ body {
 	font-size: $corps-defaut;
 }
 
+h4 {
+	color: #333;
+	font-weight: bold;
+}
+
+img.full {
+	width: 100%;
+}
+
 .credits {
 	font-size: $corps-petit;
 
 	&.datePublication {
 		color: #999;
 	}
-}
-
-h4 {
-	color: #333;
-	font-weight: bold;
 }

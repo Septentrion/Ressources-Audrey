@@ -17,5 +17,9 @@
 	.coin_#{$rubrique} .vignette {
 		z-index: 10;
 	}
+
+	.bordGauche_#{$rubrique} {
+		border-left: 5px solid $couleur;
+	}
 }
 
