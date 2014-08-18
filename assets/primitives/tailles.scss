@@ -1,0 +1,37 @@
+/* Tailles d'images */
+
+$sprite-source: url(../img/sprite.png);
+$icone-bandeau-hauteur: 63px;
+$icone-bandeau-largeur: 60px;
+$icone-question-hauteur: 75px;	
+$icone-question-largeur: 75px;	
+$icone-question-bulle-hauteur: 130px;	
+$icone-question-bulle-largeur: 190px;
+$icone-nanas-hauteur: 70px;
+$icone-nanas-largeur: 243px;
+
+/* Tailles de fontes */
+
+$corps-defaut: 1rem;
+$corps-petit: 0.75rem;
+
+html {
+	font-size: 100%;
+}
+
+body {
+	font-size: $corps-defaut;
+}
+
+.credits {
+	font-size: $corps-petit;
+
+	&.datePublication {
+		color: #999;
+	}
+}
+
+h4 {
+	color: #333;
+	font-weight: bold;
+}

@@ -1,0 +1,21 @@
+.rubriqueMarqueur:before {
+	content: "";
+    display: block;
+    height: 40px;
+    left: 25px;
+    position: absolute;
+    top: -5px;
+    width: 40px;
+    z-index: 1;
+}
+
+@each $rubrique, $couleur in (beaute: $beauteSecondaire, deco: $decoSecondaire, mode: $modeSecondaire, geekette: $geeketteSecondaire, recettes: recettesSecondaire, bien-etre: $bienEtreSecondaire, a-la-une: $aLaUneSecondaire, sexo-psycho: $sexoPsychoSecondaire) {
+	.coin_#{$rubrique}:before{
+		background-color: $couleur;
+	}
+	
+	.coin_#{$rubrique} .vignette {
+		z-index: 10;
+	}
+}
+

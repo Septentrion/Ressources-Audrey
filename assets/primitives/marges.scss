@@ -1,0 +1,17 @@
+/* Marges */
+
+@mixin soude {
+	margin-bottom: 0;
+}
+
+.soude {
+	margin-bottom: 0;
+}
+
+.soude + * {
+	margin-top: 0;
+}
+
+.col-extended {
+	padding: 0;
+}

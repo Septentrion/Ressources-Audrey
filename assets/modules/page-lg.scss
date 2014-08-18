@@ -1,0 +1,157 @@
+body {
+  background-color: $vert-eau;
+  border-top: solid $violet-tdn 3px;
+  /*font-size: 16px;*/
+}
+
+a {
+	color: inherit;
+}
+
+.a-la-une {
+	color: $alauneTexte; 
+
+	a:link {
+	  color: inherit; 
+	}
+
+	a:hover {
+	  color: $blanc;
+	  background-color: $alauneTexte;
+	}
+
+	.alaune a:visited {
+	  color: $alauneTexte;
+	  background-color: $aLaUneSecondaire;
+	}
+}
+
+.beaute {
+	color: $beauteTexte; 
+
+	a:link {
+	  color: inherit; 
+	}
+
+	a:hover {
+	  color: $blanc;
+	  background-color: $beauteTexte;
+	}
+
+	.alaune a:visited {
+	  color: $alauneTexte;
+	  background-color: $beauteSecondaire;
+	}
+}
+
+.bien-etre {
+	color: $bienEtreTexte; 
+
+	a:link {
+	  color: inherit; 
+	}
+
+	a:hover {
+	  color: $blanc;
+	  background-color: $bienEtreTexte;
+	}
+
+	.alaune a:visited {
+	  color: $alauneTexte;
+	  background-color: $bienEtreSecondaire;
+	}
+}
+
+.deco {
+	color: $decoTexte; 
+
+	a:link {
+	  color: inherit; 
+	}
+
+	a:hover {
+	  color: $blanc;
+	  background-color: $decoTexte;
+	}
+
+	.alaune a:visited {
+	  color: $alauneTexte;
+	  background-color: $decoSecondaire;
+	}
+}
+
+.geekette {
+	color: $geeketteTexte; 
+
+	a:link {
+	  color: inherit; 
+	}
+
+	a:hover {
+	  color: $blanc;
+	  background-color: $geeketteTexte;
+	}
+
+	.alaune a:visited {
+	  color: $alauneTexte;
+	  background-color: $geeketteSecondaire;
+	}
+}
+
+.mode {
+	color: $modeTexte; 
+
+	a:link {
+	  color: inherit; 
+	}
+
+	a:hover {
+	  color: $blanc;
+	  background-color: $modeTexte;
+	}
+
+	.alaune a:visited {
+	  color: $alauneTexte;
+	  background-color: $modeSecondaire;
+	}
+}
+
+.recettes {
+	color: $recettesTexte; 
+
+	a:link {
+	  color: inherit; 
+	}
+
+	a:hover {
+	  color: $blanc;
+	  background-color: $recettesTexte;
+	}
+
+	.alaune a:visited {
+	  color: $alauneTexte;
+	  background-color: $recettesSecondaire;
+	}
+}
+
+.sexo-psycho {
+	color: $sexoPsychoTexte; 
+
+	a:link {
+	  color: inherit; 
+	}
+
+	a:hover {
+	  color: $blanc;
+	  background-color: $sexoPsychoTexte;
+	}
+
+	.alaune a:visited {
+	  color: $alauneTexte;
+	  background-color: $sexoPsychoSecondaire;
+	}
+}
+
+#contenuPrincipal {
+	border-top: 4px solid #9b0083;
+}

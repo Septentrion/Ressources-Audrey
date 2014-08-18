@@ -1,0 +1,71 @@
+.header-pub {
+	position: relative;
+	top: 50px;
+}
+
+#contenusNavigation {
+	background-color: #FFF;
+	border-bottom: 2px solid #999;
+	@include boite-arrondie-haut(1rem);
+	color: $anthracite;
+	padding-top: 1rem;
+
+	.menuContenus {
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+	}
+
+	.itemContenu {
+		display: inline-block;
+		font: bold 16px Questrial;
+	}
+
+	.lienContenu:before {
+		display: inline-block;
+		background-image: url('../img/sprite.png');
+		background-repeat: no-repeat;
+		height: 40px;
+		width: 40px;
+		content: "";
+		vertical-align: middle;
+	}
+	
+	.lienQuestions:before {
+		background-position: -10px -10px;
+	}
+	.lienConcours:before {
+		background-position: -60px -10px;
+	}
+	.lienVideos:before {
+		background-position: -110px -10px;
+	}
+	.lienConseils:before {
+		background-position: -160px -10px;
+	}
+	.lienArticles:before {
+		background-position: -210px -10px;
+	}
+	.lienDossiers:before {
+		background-position: -260px -10px;
+	}
+	.lienQuiz:before {
+		background-position: -10px -10px;
+	}
+}
+
+#rubriquesNavigation {
+	background-color: #FFF;
+	padding: 1rem 0;
+
+	.menuRubriques {
+		display: flex;
+		justify-content: space-around;
+		padding: 0;
+	}
+
+	.itemRubrique {
+		display: inline-block;
+		font: bold 18px Questrial;
+	}
+}

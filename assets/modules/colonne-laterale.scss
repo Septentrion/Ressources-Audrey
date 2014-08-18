@@ -1,0 +1,42 @@
+#contenuPrincipal aside.annexes {
+
+	.recherche-rapide {
+		@include boite-arrondie-bas(10px);
+		background-color: $violet-tdn;
+
+		form {
+			padding: 0 0 0.5rem 1rem;
+		}
+	}
+
+	.reseaux-sociaux {
+		display: flex;
+		justify-content:space-between;
+	}
+
+	.inscription-newsletter {
+		@include boite-arrondie-bas(10px);
+		background-color: $violet-tdn;
+
+		a {
+			float: right;
+			margin: 0.5em 0.5em 0 0;
+		}
+
+		form {
+			padding: 0 0 0.5rem 1rem;
+		}
+
+		.sprite {
+			display: inline-block;
+			margin: 0.5rem 0 0 0.5rem;
+		}
+	}
+
+}
+
+#side-pub,
+#bloc-facebook-friends,
+#twitter-widget {
+	text-align: center;
+}

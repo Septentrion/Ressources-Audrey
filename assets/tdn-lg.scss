@@ -1,0 +1,62 @@
+@import "fonts/tdn-fonts.scss";
+
+@import "primitives/couleurs.scss";
+@import "primitives/tailles.scss";
+@import "primitives/marges.scss";
+@import "modules/mixins.scss";
+@import "modules/sprite.scss";
+@import "modules/page-lg.scss";
+@import "modules/home-lg.scss";
+@import "modules/entete-lg.scss";
+@import "modules/footer-lg.scss";
+@import "modules/colonne-laterale.scss";
+@import "modules/coins-images.scss";
+
+.tiroir {
+  background-color: #960080;
+  height: auto; }
+
+.pub-h {
+  height: 90px;
+  margin: 40px 0;
+  background-color: #777777; }
+
+.blanc {
+  background-color: white;
+  padding: 0 10px 0 10px; }
+
+h3 {
+}
+
+.point {
+  background-color: white;
+  border-bottom: dotted #96d8dc 2px; }
+
+.bmenu {
+  border-bottom: solid #9b0083 1.5px; }
+
+.menu_h_mobile {
+  height: 85px;
+  background: #FFF;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 100; }
+
+.adjuste {
+  height: 85px;
+  background-color: #9b0083;
+  z-index: 10; }
+
+.fixe {
+  position: fixed; }
+
+ul.rubriques {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 50px; }
+
+.rubriques li {
+  list-style: none;
+  background-color: white; }
+
