@@ -37,6 +37,7 @@
 .bloc-bandeau {
 
 	margin: 1rem;
+	position: relative;
 
 	.bandeau {
 		@include boite-arrondie-haut(10px);

@@ -1,0 +1,25 @@
+.videosRecentes .snapshot {
+	border: 4px solid #EFEFEF;
+	margin: 8px 4px;
+	width: calc(20% - 16px);
+}
+
+.videosToutes {
+	color: $violet-tdn;
+	text-align: right;
+	margin: 1rem;
+}
+
+.videos .scene {
+	position: absolute;
+	top: 13px;
+	left: 375px;
+
+	.rubriqueMarqueur:before {
+		left: 8px;
+	}
+}
+
+.fleche-droite:after {
+	@include sprite(20px, 20px);
+}
