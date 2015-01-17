@@ -1,7 +1,11 @@
+#tdn-cartonne {
+	min-height: 400px;
+}
+
 .lien-propos {
 	color: $violet-tdn;
 	float: right;
-	margin: 1.5rem 1rem 0.5rem 0;
+	margin: 1.2rem 1rem 0.5rem 0;
 }
 
 .fond-vert {
@@ -12,71 +16,39 @@
 	margin: 1rem;
 
 	.bandeau {
-		border-bottom: 1px solid $vert-eau;
+		border-bottom: 2px dotted $vert-tdn;
 	}
 
 	.hot {
-		min-height: calc(130px + 2rem);
-		padding: 2rem 1rem;
+		padding: 2rem 0 0 2rem;
 		position: relative;
-
-		.bloc-question:before {
-			@include sprite-question-lg;
-			background-position: -501px -150px;
-		}
-
-		.bloc-icone {
-			@include sprite-question-icone;
-			background-position: -80px -290px;
-			position: absolute;
-			top: 2rem;
-		}
 	}
 }
 
-.bloc-bandeau {
-
-	margin: 1rem;
-	position: relative;
-
-	.bandeau {
-		@include boite-arrondie-haut(10px);
-		padding-left: 6px;
-		position: relative;
-
-	}
-
-	h3 {
-		margin: 1rem 0 0.5rem 100px;
-	}
-
-	.bloc-conseils-experts {
-
-		h3:before {
-			@include sprite-lg;
-			background-position: -501px -70px;
-		}
-	}
-
-	.bloc-articles {
-
-		h3:before {
-			@include sprite-lg;
-			background-position: -566px -70px;
-		}
-	}
-
-	.accroche-article {
-
-		h1 {
-			font-variant: small-caps;
-			font-size: 2rem;
-		}
-	}
+#dernieres-questions {
 
 	.hot {
-		background-color: $vert-eau;
-		padding: 2rem 1rem 0;
+		min-height: calc(130px + 2rem);
+	}
+}
+
+.en-scene {
+
+	padding-top: 45px;
+
+	.bloc-questions {
+
+		.bloc-icone {
+			@include sprite-default;
+			@include bulle-question-1;
+			position: absolute;
+		}
+
+		.bloc-question:before {
+			@include sprite-default;
+			@include bulle-question-tdn;
+			float: left;
+		}
 	}
 }
 
@@ -117,14 +89,146 @@
 	}
 
 	.bandeau:after {
-		@include sprite($icone-nanas-hauteur, $icone-nanas-largeur);
+		@include sprite-default;
+		@include nanas-silhouettes;
 		position: absolute;
-		top: -24px;
+		top: -10px;
 		right: 48px;
-		background-position: -256px -70px;
 	}
 
 	.hot {
 		border: 1px solid $violet-tdn;
+	}
+}
+
+.lienSommaire {
+	clear: both;
+	color: $violet-tdn;
+	margin: 1rem 1rem 0 0;
+	text-align: right;
+}
+
+.bloc-conseil {
+	margin-bottom: 0.5rem;
+}
+
+@mixin colonne-questions {
+	border: 1px solid $vert-tdn;
+	border-top: 0;
+	border-radius: 0 0 12px 12px;
+	padding: 1.5rem 10px 1rem;
+	width: 50%;
+}
+
+.flex-questions {
+	display: flex;
+	justify-content: space-between;
+
+	article {
+		min-height: 121px;
+	}
+
+	.etiquette-rubrique {
+		margin-bottom: 0.5rem;
+	}
+
+	.questions-recentes {
+		@include colonne-questions;
+		margin-right: 10px;
+	}
+
+	.questions-aimees {
+		@include colonne-questions;
+		margin-left: 10px;
+	}
+}
+
+#videos-recentes {
+
+	.dernieres {
+		margin-bottom: 70px;
+	}
+
+	.scene {
+		
+	}
+}
+
+/* Coups de cœur shopping */
+
+#coups-de-coeur-shopping {
+
+	.bloc-icone {
+		@include sprite-default;
+		@include shopping-coup-de-coeur-1;
+		float: left;
+	}
+
+	.retour-arriere {
+		@include sprite-default;
+		@include bouton-rewind;
+		border: 0;
+		display: inline-block;
+	    vertical-align: middle;
+	}
+
+	.avance-suite {
+		@include sprite-default;
+		@include bouton-forward;
+		border: 0;
+		display: inline-block;
+	    vertical-align: middle;
+	}
+
+	.scene-shopping {
+	    margin: 0 0.5rem;
+	    display: inline-block;
+	    overflow: hidden;
+	    vertical-align: middle;
+	    width: calc(100% - 280px);
+
+		.conteneur {
+			position: relative;
+			width: 2900px;
+		}
+
+	    .flux-shopping {
+	    	position: relative;
+	    	left: 0;
+	    }
+	}
+
+	.snapshot-produit {
+	    display: inline-block;
+	    height: 150px;
+	    margin: 0px 5px;
+	    padding-top: 5px;
+	    position: relative;
+	    text-align: center;
+	    width: 120px;
+	    vertical-align: middle;
+
+	    img {
+	    	border: 1px solid $violet-tdn;
+	    	width: 100px;
+	    }
+
+	    .featured:after {
+			@include sprite-default;
+			@include coin-coup-de-coeur;
+			display: block;
+			position: absolute;
+			right: 4px;
+			top: 0;
+	    }
+
+	    figcaption {
+	    	font-size: 0.7rem;
+	    	margin-top: 0.5rem;
+	    }
+	}
+
+	.snapshot-produit:first-of-type {
+		margin-left: 0;
 	}
 }

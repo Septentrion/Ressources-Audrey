@@ -11,25 +11,6 @@
 	width: 35px;
 }
 
-@mixin sprite ($hauteur, $largeur) {
-	background-image: $sprite-source;
-	content: "";	
-	height: $hauteur;
-	width: $largeur;
-}
-
-@mixin sprite-lg {
-	@include sprite($icone-bandeau-hauteur, $icone-bandeau-largeur);
-	position: absolute;
-	top: 11px;
-	left: 35px;   
-}
-
-@mixin sprite-question-lg {
-	@include sprite($icone-question-hauteur, $icone-question-largeur);
-	float: left;
-}
-
 @mixin sprite-question-icone {
 	@include sprite($icone-question-bulle-hauteur, $icone-question-bulle-largeur);
 }

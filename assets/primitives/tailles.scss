@@ -1,6 +1,6 @@
 /* Tailles d'images */
 
-$sprite-source: url(../img/sprite.png);
+$sprite-source: url(../../img/sprite.png);
 $icone-bandeau-hauteur: 63px;
 $icone-bandeau-largeur: 60px;
 $icone-question-hauteur: 75px;	
@@ -23,6 +23,10 @@ body {
 	font-size: $corps-defaut;
 }
 
+h1 {
+	font-size: 1.9rem;
+}
+
 h4 {
 	color: #333;
 	font-weight: bold;
@@ -38,4 +42,26 @@ img.full {
 	&.datePublication {
 		color: #999;
 	}
+}
+
+img.contrainte {
+	width: 100%;
+}
+
+@each $taille in (40,60,80,100,120) {
+
+	.iconex#{$taille} {
+		height: #{$taille}px;
+		width: #{$taille}px;
+	}
+
+	.iconex#{$taille} img {
+		width: 100%;
+	}
+
+	.iconex#{$taille}:before {
+		height: calc(#{$taille}px / 2);
+		width: calc(#{$taille}px / 2);
+	}
+
 }

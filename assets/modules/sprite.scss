@@ -31,7 +31,7 @@
 	background-position: -420px -10px;
 }
 /** Actu Communauté **/
-.logoTdn{
+.logoTDN{
 	width:238px;
 	height:205px;
 	background-position: -10px -60px;
@@ -122,32 +122,32 @@
 	height:25px;
 	width:25px;
 }
-.fb{
-	background-position:-501px -234px;
-}
-.tw{
-	background-position:-547px -234px;
-}
-.ig{
-	background-position:-593px -234px;
-}
-.pi{
-	background-position:-639px -234px;
-}
-.yt{
-	background-position:-685px -234px;
-}
-.gplus{
-	background-position:-731px -234px;
-}
-.app{
-	background-position:-776px -234px;
-}
+
+$reseaux-sociaux-y: -234px;
+$facebook-x: -501px;
+$twitter-x: -547px;
+$instagram-x: -593px;
+$pinterest-x: -639px;
+$youtube-x: -685px;
+$google-x: -731px;
+$app-x: -776px;
+
 .tdn_new{
 	height:30px;
 	width:55px;
 	background-position:-651px -161px;
 }
+
+$contenu-vert-y: -70px;
+$article-vert-x: -565px;
+$conseil-vert-x: -500px;
+$dossier-vert-x: -760px;
+$concours-vert-x: -820px;
+$question-vert-x: -700px;
+$quiz-vert-x: 0px;
+$video-vert-x: -630px;
+
+
 .dossier_icone{
 	width:47px;
 	height:47px;

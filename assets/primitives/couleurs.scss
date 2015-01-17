@@ -2,7 +2,11 @@ $blanc: #FFF;
 $anthracite: #333;
 $vert-eau: #E8F9F8;
 $vert-tdn: #96D8DC;
+$vert-soutenu: #448A8A;
 $violet-tdn: #9B0083;
+$violet-secondaire: #960080;
+$violet-tertiaire: #6F005F;
+$rose-tdn: #FDD0F7;
 
 /* couleurs texte */
 
@@ -37,6 +41,10 @@ $sexo-psycho-secondaire : #FFDED6;
 $recettes-secondaire : #E2D5C6;
 
 /* classes primitives */
+
+.blanc {
+	color:	$blanc;
+}
 
 @each $rubrique in (beaute, deco, mode, geekette, recettes, bien-etre, a-la-une, sexo-psycho) {
 
